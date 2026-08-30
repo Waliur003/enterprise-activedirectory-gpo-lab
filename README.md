@@ -333,11 +333,11 @@ Below is the verified photographic evidence demonstrating each completed milesto
 
 | Artifact | File Reference | Technical Milestone Verified |
 |---|---|---|
-| **Milestone 01** | `screenshots/01-dc-ip-config.png` | Static IP (`192.168.10.10`), loopback DNS, and NetBIOS name (`DC-01`) baseline |
-| **Milestone 02** | `screenshots/02-ad-promotion.png` | Successful AD DS role installation and forest creation for `corp.local` |
-| **Milestone 03** | `screenshots/03-ou-hierarchy.png` | Scalable OU tree under `_CORP_HQ`, user object `Jane.Smith`, and `SG_HR_Users` group |
-| **Milestone 04** | `screenshots/04-domain-join-success.png` | Workstation FQDN confirmation (`CL-WIN10.corp.local`) and Active Directory trust handshake |
-| **Milestone 05** | `screenshots/05-gpo-enforcement-proof.png` | Group Policy application (`GPO_HR_Security_Baseline`) displayed in `gpresult /r` alongside real-time OS access denial dialog |
+| **Milestone 01** | `01-dc-ip-config.png` | Static IP (`192.168.10.10`), loopback DNS, and NetBIOS name (`DC-01`) baseline |
+| **Milestone 02** | `02-ad-promotion.png` | Successful AD DS role installation and forest creation for `corp.local` |
+| **Milestone 03** | `03-ou-hierarchy.png` | Scalable OU tree under `_CORP_HQ`, user object `Jane.Smith`, and `SG_HR_Users` group |
+| **Milestone 04** | `04-domain-join-success.png` | Workstation FQDN confirmation (`CL-WIN10.corp.local`) and Active Directory trust handshake |
+| **Milestone 05** | `05-gpo-enforcement-proof.png` | Group Policy application (`GPO_HR_Security_Baseline`) displayed in `gpresult /r` alongside real-time OS access denial dialog |
 
 ---
 
@@ -347,6 +347,9 @@ Below is the verified photographic evidence demonstrating each completed milesto
 
 **Technical Validation:** Demonstrates establishing a solid networking baseline required prior to AD DS promotion to prevent dynamic IP lease dropouts and DNS replication failures.
 
+<img width="1001" height="723" alt="01-dc-ip-config" src="https://github.com/user-attachments/assets/29d9c312-c761-4bff-90da-403aab1aea7a" />
+
+
 ---
 
 ### Milestone 2: AD DS Role Installation & Forest Root Promotion
@@ -354,6 +357,9 @@ Below is the verified photographic evidence demonstrating each completed milesto
 **Artifact Description:** Deployment of the Active Directory Domain Services role and successful forest root creation for the namespace `corp.local`.
 
 **Technical Validation:** Verifies the deployment of the centralized Kerberos KDC, Schema partition, Global Catalog, and integrated DNS forward lookup zones for enterprise directory queries.
+
+<img width="745" height="564" alt="02-ad-promotion" src="https://github.com/user-attachments/assets/e01b64a5-6274-407a-b737-a0f27f117b13" />
+
 
 ---
 
@@ -363,6 +369,9 @@ Below is the verified photographic evidence demonstrating each completed milesto
 
 **Technical Validation:** Proves implementation of Role-Based Access Control (RBAC) and clean object compartmentalization adhering to the Principle of Least Privilege (PoLP) for scalable Group Policy inheritance.
 
+<img width="753" height="528" alt="03-ou-hierarchy" src="https://github.com/user-attachments/assets/1a81c6c5-5cfd-45d8-b14a-c9e513559953" />
+
+
 ---
 
 ### Milestone 4: Workstation Domain Join & Machine Trust Handshake
@@ -370,6 +379,9 @@ Below is the verified photographic evidence demonstrating each completed milesto
 **Artifact Description:** System Properties verification window on `CL-WIN10` showing `Full computer name: CL-WIN10.corp.local` and active membership in domain `corp.local`.
 
 **Technical Validation:** Confirms end-to-end DNS SRV record resolution across the isolated virtual network, authenticated Kerberos exchange with `DC-01`, and the generation of a secure computer account object within Active Directory.
+
+<img width="323" height="390" alt="04-domain-join-success" src="https://github.com/user-attachments/assets/7807a551-b51d-4d87-af3f-487216c13d66" />
+
 
 ---
 
@@ -382,6 +394,9 @@ This operation has been cancelled due to restrictions in effect on this computer
 ```
 
 **Technical Validation:** Proves end-to-end policy authoring, OU linking, client-side policy retrieval, and effective endpoint hardening against unauthorized administrative system access.
+
+<img width="1011" height="783" alt="05-gpo-enforcement-proof" src="https://github.com/user-attachments/assets/977213d4-bbd3-40e8-81f1-d8b53102f954" />
+
 
 ---
 
