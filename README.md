@@ -172,17 +172,6 @@ gpupdate /force
 gpresult /r
 ```
 
----
-
-## Verification Evidence & Artifacts
-
-| Artifact | File Reference | Technical Milestone Verified |
-|---|---|---|
-| **Milestone 01** | `screenshots/01-dc-ip-config.png` | Static IP (`192.168.10.10`), loopback DNS, and NetBIOS name (`DC-01`) baseline |
-| **Milestone 02** | `screenshots/02-ad-promotion.png` | Successful AD DS role promotion and forest creation for `corp.local` |
-| **Milestone 03** | `screenshots/03-ou-hierarchy.png` | Scalable OU tree under `_CORP_HQ`, user object `Jane.Smith`, and `SG_HR_Users` group |
-| **Milestone 04** | `screenshots/04-domain-join-success.png` | Workstation FQDN confirmation (`CL-WIN10.corp.local`) and Active Directory trust handshake |
-| **Milestone 05** | `screenshots/05-gpo-enforcement-proof.png` | Group Policy application (`GPO_HR_Security_Baseline`) displayed in `gpresult /r` alongside real-time OS access denial dialog |
 
 ---
 
