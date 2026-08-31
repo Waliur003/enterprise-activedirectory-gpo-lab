@@ -289,33 +289,6 @@ All client-to-server traffic uses mutual authentication handled natively by the 
 
 ---
 
-## Future Improvements & Scalability Roadmap
-
-### Automated Identity Lifecycle Management
-
-Develop an end-to-end PowerShell provisioning script utilizing `New-ADUser` to parse employee `.csv` directories, automatically generate secure randomized passwords, and populate department-specific OUs.
-
-### Dynamic IP Allocation & DNS Scopes
-
-Deploy and authorize the **DHCP Server** role on `DC-01`, configuring the following scope options for zero-touch client onboarding:
-
-```text
-003 Router/Gateway
-006 DNS Servers
-015 Domain Name
-```
-
-### Tiered Tier-0/Tier-1 Administration Model
-
-Implement Active Directory administrative tiering such as ESA/Red Forest concepts to prevent domain-level credentials from touching member workstations.
-
-### Departmental Network Storage
-
-Deploy file services with **Access-Based Enumeration (ABE)** and granular NTFS permissions mapped via GPO Drive Maps.
-
-
----
-
 ## Verification Screenshots & Technical Artifacts
 
 Below is the verified photographic evidence demonstrating each completed milestone of the Active Directory and Group Policy implementation lifecycle.
@@ -433,3 +406,33 @@ ncpa.cpl
 * Internal Network Sandboxing
 * Virtual Hardware Allocation
 * UEFI vs. Legacy BIOS Firmware Troubleshooting
+
+
+---
+
+## Future Improvements & Scalability Roadmap
+
+### Automated Identity Lifecycle Management
+
+Develop an end-to-end PowerShell provisioning script utilizing `New-ADUser` to parse employee `.csv` directories, automatically generate secure randomized passwords, and populate department-specific OUs.
+
+### Dynamic IP Allocation & DNS Scopes
+
+Deploy and authorize the **DHCP Server** role on `DC-01`, configuring the following scope options for zero-touch client onboarding:
+
+```text
+003 Router/Gateway
+006 DNS Servers
+015 Domain Name
+```
+
+### Tiered Tier-0/Tier-1 Administration Model
+
+Implement Active Directory administrative tiering such as ESA/Red Forest concepts to prevent domain-level credentials from touching member workstations.
+
+### Departmental Network Storage
+
+Deploy file services with **Access-Based Enumeration (ABE)** and granular NTFS permissions mapped via GPO Drive Maps.
+
+
+
